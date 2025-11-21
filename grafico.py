@@ -26,4 +26,3 @@ def grafico_dispersao(listNomeclaturas, listValores):
     plt.xlabel('Moedas')
     plt.ylabel('Valor em BRL')
     plt.show()
-
