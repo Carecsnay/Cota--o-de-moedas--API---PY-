@@ -16,7 +16,6 @@ def grafico_menu():
 
     listNomeclaturas = ['JPY - Ienes','USD - Dólar', 'EUR - Euro', 'GBP - Libras']
     listValores = [1 / cotacoes['JPY'], 1 / cotacoes['USD'], 1 / cotacoes['EUR'], 1 / cotacoes['GBP']]
-    print(listValores)
 
     opcao = -1
     while opcao != 0:
