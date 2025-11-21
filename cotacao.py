@@ -1,6 +1,6 @@
 import requests
 
-def get_cotacao(nomeclaturaDestino):
+def get_cotacao(nomeclaturaDestino='BRL'):
     url = 'https://api.exchangerate-api.com/v4/latest/' + nomeclaturaDestino
     response = requests.get(url)
     data = response.json()

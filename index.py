@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from cotacao import converterCotacao
 
 def menu():
