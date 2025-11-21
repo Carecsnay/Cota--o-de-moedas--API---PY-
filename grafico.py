@@ -1,20 +1,13 @@
 import matplotlib.pyplot as plt
-from cotacao import get_cotacao
 
-cotacoes = get_cotacao()
-
-legNomeclaturas = ['JPY - Ienes','USD - Dólar', 'EUR - Euro', 'GBP - Libras']
-legValores = [1 / cotacoes['JPY'], 1 / cotacoes['USD'], 1 / cotacoes['EUR'], 1 / cotacoes['GBP']]
-print(legValores)
-
-def grafico_barras(legNomeclaturas, legValores):
-    plt.bar(legNomeclaturas, legValores)
+def grafico_barras(listNomeclaturas, listValores):
+    plt.bar(listNomeclaturas, listValores)
     plt.title('Conversões para REAL (BRL)')
     plt.xlabel('Moedas')
     plt.ylabel('Valor em BRL')
     plt.show()
 
-def grafico_pizza(legNomeclaturas, legValores):
+def grafico_pizza(listNomeclaturas, listValores):
     def autopct_format(values):
         def my_format(pct):
             total = sum(values)
@@ -23,15 +16,21 @@ def grafico_pizza(legNomeclaturas, legValores):
         return my_format
 
     
-    plt.pie(legValores, labels=legNomeclaturas, autopct=autopct_format(legValores))
+    plt.pie(listValores, labels=listNomeclaturas, autopct=autopct_format(listValores))
     plt.title('Proporção em relação ao BRL (REAL) 1 para 1')
     plt.show()
 
-def grafico_dispersao(legNomeclaturas, legValores):
-    plt.scatter(legNomeclaturas, legValores)
+def grafico_dispersao(listNomeclaturas, listValores):
+    plt.scatter(listNomeclaturas, listValores)
     plt.title('Conversões para REAL (BRL)')
     plt.xlabel('Moedas')
     plt.ylabel('Valor em BRL')
     plt.show()
 
-grafico_dispersao(legNomeclaturas, legValores)
+def menu():
+    print()
+    print('1 - Gráfico de Barras')
+    print('2 - Gráfico de Pizza')
+    print('3 - Gráfico de Dispersão')
+    print('0 - Sair')
+    print()
