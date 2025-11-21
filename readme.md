@@ -54,10 +54,12 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
     - Para a opção `4`, você precisará fornecer a sigla de 3 letras da moeda de origem e destino (ex: `USD`, `BRL`, `EUR`, `JPY`).
     - A opção `5` abrirá um novo menu para a seleção do tipo de gráfico que você deseja visualizar.
 
-5. Imagens <br><br>
+5. Imagens <br>
    ### Grafico de Pizza <br>
    <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/68150437-0dab-4dde-94d9-7dd4052f96b5" /> <br>
    ### Grafico de Barras <br>
    <img width="640" height="480" alt="Figure_2" src="https://github.com/user-attachments/assets/857675a1-2e50-4a9b-9a00-ceb0d306048d" />
+   ### Execução <br>
+   ![Captura de tela 2025-11-21 071127](https://github.com/user-attachments/assets/99cf5d45-f61c-4b4c-913d-9006f487837a)
 
 
