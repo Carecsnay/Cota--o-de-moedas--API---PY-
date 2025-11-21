@@ -27,10 +27,3 @@ def grafico_dispersao(listNomeclaturas, listValores):
     plt.ylabel('Valor em BRL')
     plt.show()
 
-def menu():
-    print()
-    print('1 - Gráfico de Barras')
-    print('2 - Gráfico de Pizza')
-    print('3 - Gráfico de Dispersão')
-    print('0 - Sair')
-    print()

@@ -1,6 +1,14 @@
 from cotacao import get_cotacao
 from grafico import *
 
+def menu():
+    print()
+    print('1 - Gráfico de Barras')
+    print('2 - Gráfico de Pizza')
+    print('3 - Gráfico de Dispersão')
+    print('0 - Sair')
+    print()
+
 opcao = 1
 
 cotacoes = get_cotacao()
